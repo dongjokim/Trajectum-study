@@ -1,0 +1,52 @@
+# Nested upstream clones (JCORRAN, OxygenSPC, Trajectum, deps).
+# Keep only the local patches listed with ! below.
+JCORRAN/*
+!JCORRAN/Example_JCorran/
+JCORRAN/Example_JCorran/*
+!JCORRAN/Example_JCorran/main_tree.cpp
+!JCORRAN/Example_JCorran/Makefile
+
+OxygenSPC/*
+!OxygenSPC/analysis_pythia/
+!OxygenSPC/analysis_WS/
+!OxygenSPC/centralityCalibration.C
+OxygenSPC/analysis_pythia/*
+!OxygenSPC/analysis_pythia/JCorrSPCRun3.C
+!OxygenSPC/analysis_pythia/Makefile
+OxygenSPC/analysis_WS/*
+!OxygenSPC/analysis_WS/JCorrSPCRun3.C
+!OxygenSPC/analysis_WS/Makefile
+
+Trajectum/
+deps/
+
+# Large run products (keep scripts, yaml, par, cents csv)
+run/**/data/
+run/**/jtrees/
+run/**/*.root
+run/**/*.oscar
+run/**/OO.main
+run/**/OO.afterburned
+run/**/OO.geometry
+run/**/OO.extra
+run/**/OO.bypass
+run/**/OO.input
+run/**/filename0
+run/**/*.pcm
+
+# Binaries, dicts, debug
+*.o
+*.a
+*.so
+*.dylib
+*.pcm
+*.dSYM/
+tools/oscar_to_jtree
+tools/jcorranDict_rdict.pcm
+tools/flowPP/calculate
+**/JCorrSPCRun3
+**/main_tree
+**/nanoDict.cc
+
+.vscode/
+.DS_Store

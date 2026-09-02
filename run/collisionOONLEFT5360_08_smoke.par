@@ -1,0 +1,93 @@
+general{
+	output=OO
+	format=smash
+	numevents=2
+	npdfa=EPPS21nlo_CT18Anlo_O16/0
+	npdfb=EPPS21nlo_CT18Anlo_O16/0
+	hadronizermaxparticles=400000
+	hardprocessmaxparticles=40000
+	hardprocessmaxgeometryoutputs=40000
+}
+
+entropyacceptanceprobability{
+	0:1
+	100:1
+}
+
+oversampling{
+	0:1
+	100:1
+}
+
+trentoneutronskindminsubstructureO6O6{
+	localdensityradius=2.51
+	maxspatialdistance=2.98
+	maxmomentumdistance=163.1
+	deuteronwidth=1.89
+	tritonwidth=2.19
+	he3width=2.13
+	deuteronnorm=0.72
+	tritonnorm=0.9
+	he3norm=0.7
+	maxneighbordistance=2.93
+	untabulateddecayprobability=0.043
+	sigmannforspectators=39.11733654645627
+	dmin=0.29043674332319624
+	w=0.61379404078565
+	sigmann=68.26760304791671
+	sigmafluct=0.1638965147975387
+	p=-0.005370266946127342
+	q=1.2615658023095087
+	norm=21.85342687714232
+	nc=2.262327918476592
+	voverw=0.6251682131169223
+}
+
+freestreaminghybridprehydrodynamicstage{
+	freestreamingreferencetime=0.6222684287540916
+	weaktostrong=0.6219658912559471
+}
+
+secondorderhydro{
+	numlatticesites=127.2
+	latticesize=15.9
+}
+
+musclsolverktminmodfastshrinkgridmidpoint{
+	cflconstant=0.08
+}
+
+LatticeEOStempdepTrajectum{
+	dof=56.32134868071632
+	an=-9.181431577313095
+	bulklambda=0
+	shear0=0.2063380540067718
+	shear150=0.2063380540067718
+	shear300=0.13778986593374992
+	shear500=0.11438106197069353
+	shear800=0.3783831782723453
+	shearrelaxationtime=1.464836812292644
+	bulkmax=0.07330809369545985
+	bulkT0=0.3244745980035605
+	bulkwidth=0.08733703194681648
+	bulkrelaxationtime=0.0687
+	taupipiovertaupi=1.7722919310992578
+}
+
+cooperfryehadronizer{
+	freezeouttemp=150.3989812338307
+	rapidityrange=1.5
+}
+
+pathlengthlightcone{
+	productionrate=0.0001
+	freezeouttemp=150.3989812338307
+}
+
+thermodynamicprobes{
+	lowesttemperature=150.3989812338307
+}
+
+thermalphotons{
+	lowesttemperature=150.3989812338307
+}
