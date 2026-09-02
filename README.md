@@ -2,6 +2,8 @@
 
 Use Trajectum to generate oxygen–oxygen (OO) events, convert them to a **JCORRAN Tree**, then run **two independent analyses** on that same tree.
 
+**Install and run:** see [INSTALL.md](INSTALL.md). This README is the physics workflow and what differs from upstream JCORRAN / OxygenSPC.
+
 ## Goal
 
 Produce anisotropic-flow results for OO collisions from Trajectum:
