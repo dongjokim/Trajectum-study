@@ -143,6 +143,8 @@ zsh "$STUDY/run/n100000/run_chain.sh"
 
 That script: collide → SMASH → `oscar_to_jtree` (no CSV) → `main_tree` → SPC 3+4. Centrality is measured on **this** sample; do not reuse a 1k `.cent.csv`.
 
+Turn `AnalysisResults.root` into `vn` / SC / ρ graphs with [POSTPROCESS.md](POSTPROCESS.md).
+
 ## Checks
 
 - `collide` wrote `OO.main` / `OO.extra`
